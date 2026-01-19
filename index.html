@@ -2,40 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Happy  Birthday GG ❤️</title>
+  <title>Happy Birthday ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <section class="hero">
-    <h1>Happy Birthday, My Love 🎉</h1>
-    <p>You make my world better every single day.</p>
-    <button onclick="showSurprise()">Click for a Surprise 🎁</button>
-  </section>
+<h1>Happy Birthday My Love 🎉</h1>
+<p>Click your gifts 🎁</p>
 
-  <section id="surprise" class="hidden">
-    <h2>💌 A Message for You</h2>
-    <p>
-      Happy Birthday baby ❤️  
-      Thank you for being my favorite person.
-    </p>
-  </section>
+<div class="gifts">
+  <div class="gift" onclick="openGift('pic1.png')">🎁 Gift 1</div>
+  <div class="gift" onclick="openGift('pic2.png')">🎁 Gift 2</div>
+  <div class="gift" onclick="openGift('pic3.png')">🎁 Gift 3</div>
+</div>
 
-  <section class="gallery">
-    <h2>Our Memories 📸</h2>
- <section class="gallery">
-  <h2>Our Memories 📸</h2>
-  <div class="photos">
-    <img src="pic1.png">
-    <img src="pic2.png">
-  </div>
-</section>
+<div id="modal">
+  <span onclick="closeGift()">✖</span>
+  <img id="giftImage">
+</div>
 
-  </section>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
